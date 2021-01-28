@@ -1,5 +1,10 @@
 const express = require('express');
 const app = express();
+
+require('./startup/prod')(app);
+
+
+
 const PORT = process.env.PORT || 3050;
 
 const Joi = require('joi');
